@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简约目录-正文布局</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧目录 -->
+        <div class="sidebar">
+            <h3 data-zh="文章目录" data-en="Contents">文章目录</h3>
+            <a href="#section1" class="active" data-zh="第一部分：介绍" data-en="Part 1: Introduction">第一部分：介绍</a>
+            <a href="#section2" data-zh="第二部分：核心内容" data-en="Part 2: Core Content">第二部分：核心内容</a>
+            <a href="#section3" data-zh="第三部分：详细说明" data-en="Part 3: Detailed Explanation">第三部分：详细说明</a>
+            <a href="#section4" data-zh="第四部分：总结与展望" data-en="Part 4: Summary and Outlook">第四部分：总结与展望</a>
+        </div>
+        <!-- 右侧正文 -->
+        <div class="main">
+            <!-- 右上角语言切换按钮 -->
+            <div class="lang-switcher">
+                <button id="langBtn" class="lang-btn">English</button>
+            </div>
+            <!-- 动态加载内容容器 -->
+            <div id="content-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
