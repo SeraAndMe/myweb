@@ -127,16 +127,133 @@ main {
     white-space: nowrap;
 }
 
+.post-list .note {
+    font-size: 14px;
+    color: #999;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
 .new-tag {
     display: inline-block;
     font-size: 12px;
     font-weight: 600;
     color: #fff;
-    background-color: #ff4d4f;
-    padding: 1px 6px;
-    border-radius: 10px;
+    background-color: #e74c3c;
+    padding: 2px 6px;
+    border-radius: 3px;
     margin-left: 5px;
     vertical-align: middle;
+}
+
+/* 筛选容器样式 */
+.filter-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-container label {
+    font-size: 14px;
+    color: #34495e;
+    white-space: nowrap;
+}
+
+.filter-container select,
+.filter-container input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.filter-container input {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* 表格样式 */
+.bloggers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.bloggers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.bloggers-table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #34495e;
+    border-bottom: 2px solid #ddd;
+    border-right: 1px solid #ccc;
+}
+
+.bloggers-table th:last-child {
+    border-right: none;
+}
+
+.bloggers-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #ccc;
+    color: #34495e;
+}
+
+.bloggers-table td:last-child {
+    border-right: none;
+}
+
+.bloggers-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.bloggers-table a {
+    color: #34495e;
+    text-decoration: none;
+    border-bottom: 1px dotted #34495e;
+    transition: all 0.2s;
+}
+
+.bloggers-table a:hover {
+    color: #666;
+    border-bottom-color: #666;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-container input {
+        min-width: auto;
+    }
+    
+    .bloggers-table {
+        font-size: 12px;
+    }
+    
+    .bloggers-table th,
+    .bloggers-table td {
+        padding: 8px;
+    }
 }
 
 @media (max-width: 600px) {
