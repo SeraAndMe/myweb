@@ -235,6 +235,176 @@ main {
     border-bottom-color: #666;
 }
 
+/* 思维导图容器样式 */
+.mindmap-container {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.mindmap-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mindmap-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.mindmap-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.mindmap-item p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.mindmap-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+.mindmap-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #34495e;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 10px 0;
+}
+
+.mindmap-link:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+/* 内容布局 */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* 左侧导航栏 */
+.side-nav {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.side-nav h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 8px 12px;
+    color: #34495e;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: #e9ecef;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* 主内容区 */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 思维导图占位符 */
+.mindmap-placeholder {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px dashed #dee2e6;
+    border-radius: 4px;
+    color: #6c757d;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .side-nav {
+        width: 100%;
+        position: static;
+        max-height: none;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-list li {
+        margin-bottom: 0;
+    }
+    
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .filter-container {
