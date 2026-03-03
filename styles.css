@@ -304,9 +304,13 @@ main {
 }
 
 .mindmap-item {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2;
 }
 
 .mindmap-item:last-child {
@@ -317,14 +321,59 @@ main {
 
 .mindmap-item h3 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     color: #34495e;
-    margin-bottom: 10px;
+    margin: 0;
+    flex: 1;
 }
 
 .mindmap-item p {
     margin-bottom: 15px;
     color: #666;
+}
+
+/* 文章列表样式 */
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.4;
+}
+
+.article-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.article-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin: 0 0 10px 0;
+}
+
+.article-item h3 a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.article-item h3 a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.article-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
 }
 
 .mindmap-image {
@@ -337,7 +386,7 @@ main {
 
 .mindmap-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #f8f9fa;
     color: #34495e;
     text-decoration: none;
@@ -346,7 +395,7 @@ main {
     font-size: 14px;
     font-weight: 500;
     transition: all 0.2s ease;
-    margin: 10px 0;
+    margin: 0 0 0 15px;
 }
 
 .mindmap-link:hover {
@@ -410,39 +459,23 @@ main {
     margin-bottom: 8px;
     padding: 5px 0;
     border-bottom: 1px solid #e9ecef;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-title:hover {
+    color: #666;
+}
+
+.category-title.active {
+    color: #2c3e50;
+    border-bottom-color: #2c3e50;
+    font-weight: 700;
 }
 
 /* 子导航列表样式 */
 .sub-nav-list {
-    list-style: none;
-    padding-left: 15px;
-    margin: 0;
-}
-
-.sub-nav-list li {
-    margin-bottom: 5px;
-}
-
-.nav-link {
-    display: block;
-    padding: 6px 10px;
-    color: #34495e;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    font-size: 14px;
-}
-
-.nav-link:hover {
-    background-color: #e9ecef;
-    color: #2c3e50;
-    text-decoration: none;
-}
-
-.nav-link.active {
-    background-color: #e9ecef;
-    font-weight: 500;
-    color: #2c3e50;
+    display: none;
 }
 
 /* 占位符样式 */

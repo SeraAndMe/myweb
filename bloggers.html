@@ -15,566 +15,359 @@
                 <a href="zh/bloggers.html">中文</a> | <a href="bloggers.html">English</a>
             </div>
         </header>
-        <main>
-            <div class="filter-container">
-                <label for="type-filter">Type Filter:</label>
-                <select id="type-filter">
-                    <option value="all">All</option>
-                    <option value="理学">Science</option>
-                    <option value="工学">Engineering</option>
-                    <option value="生活旅游">Life & Travel</option>
-                </select>
-                <label for="keyword-filter">Keyword Search:</label>
-                <input type="text" id="keyword-filter" placeholder="Enter title or note keywords">
-            </div>
-            
-            <table class="bloggers-table">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Title</th>
-                        <th>URL</th>
-                        <th>Note</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div class="content-wrapper">
+            <nav class="side-nav">
+                <h3>Blogger Categories</h3>
+                <ul class="nav-list">
+                    <li class="main-category">
+                        <span class="category-title">Engineering</span>
+                    </li>
+                    <li class="main-category">
+                        <span class="category-title">Science</span>
+                    </li>
+                    <li class="main-category">
+                        <span class="category-title">Travel</span>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main-content">
+                <div class="mindmap-container">
                     <!-- 工学博主 -->
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>千秋我不见</td>
-                        <td><a href="https://space.bilibili.com/3546648267458570/upload/video" target="_blank">链接</a></td>
-                        <td>DIY</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>fire1tech</td>
-                        <td><a href="https://space.bilibili.com/506494865/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>工科男孙老师</td>
-                        <td><a href="https://space.bilibili.com/43584648/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>中飞动力</td>
-                        <td><a href="https://space.bilibili.com/44662140/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>小 Dou 有两块钢铁</td>
-                        <td><a href="https://space.bilibili.com/507470725/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>维修佬戴师傅</td>
-                        <td><a href="https://space.bilibili.com/1733266646/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>VeriMake</td>
-                        <td><a href="https://space.bilibili.com/356383684/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>马工流浪德国</td>
-                        <td><a href="https://space.bilibili.com/2506840/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>Oskar</td>
-                        <td><a href="https://space.bilibili.com/375400171/upload/video" target="_blank">链接</a></td>
-                        <td>电</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>工厂极客</td>
-                        <td><a href="https://space.bilibili.com/481034497/upload/video" target="_blank">链接</a></td>
-                        <td>工厂</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>一切的流程</td>
-                        <td><a href="https://space.bilibili.com/3493082129500984/upload/video" target="_blank">链接</a></td>
-                        <td>工厂</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>自动化高级工程师</td>
-                        <td><a href="https://space.bilibili.com/32877387/upload/video" target="_blank">链接</a></td>
-                        <td>工厂</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>MiracleProcess</td>
-                        <td><a href="https://space.bilibili.com/369308230/upload/video" target="_blank">链接</a></td>
-                        <td>工厂</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>可心造物</td>
-                        <td><a href="https://space.bilibili.com/476961512/upload/video" target="_blank">链接</a></td>
-                        <td>工厂</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>巴师傅实用机电</td>
-                        <td><a href="https://space.bilibili.com/3493271942728403/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>深圳刘工</td>
-                        <td><a href="https://space.bilibili.com/3493088209144609/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>硬核拆解</td>
-                        <td><a href="https://space.bilibili.com/427494870/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>叮咣拆机</td>
-                        <td><a href="https://space.bilibili.com/1029896185/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>方猫 boom</td>
-                        <td><a href="https://space.bilibili.com/138624168/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>手工耿</td>
-                        <td><a href="https://space.bilibili.com/280793434/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>喵星考拉（知乎）</td>
-                        <td><a href="https://www.zhihu.com/people/miao-xing-kao-la" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>喵星考拉（B站）</td>
-                        <td><a href="https://space.bilibili.com/431953269/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>大佬吴_Jennifer</td>
-                        <td><a href="https://space.bilibili.com/221670316/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>瘦子阿汪</td>
-                        <td><a href="https://space.bilibili.com/10605391/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>404小设</td>
-                        <td><a href="https://space.bilibili.com/285706426/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>邯工制图</td>
-                        <td><a href="https://space.bilibili.com/479966540/upload/video" target="_blank">链接</a></td>
-                        <td>机</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>蒋小坏</td>
-                        <td><a href="https://www.zhihu.com/people/jiang-gui-ping-98/answers" target="_blank">链接</a></td>
-                        <td>机械</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>幽州大肚肚</td>
-                        <td><a href="https://www.zhihu.com/people/ting-zhong-wei-mian-ke" target="_blank">链接</a></td>
-                        <td>机械，杂七杂八</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>追光者</td>
-                        <td><a href="https://www.zhihu.com/people/sun-xiao-12-42" target="_blank">链接</a></td>
-                        <td>机械和工业软件</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>孙覾时</td>
-                        <td><a href="https://www.zhihu.com/people/sin-zone" target="_blank">链接</a></td>
-                        <td>机械和工业软件</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>稚晖君</td>
-                        <td><a href="https://space.bilibili.com/20259914/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>硬件茶谈</td>
-                        <td><a href="https://space.bilibili.com/14871346/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>星球研究所</td>
-                        <td><a href="https://space.bilibili.com/326427334/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>做视频的洛唐</td>
-                        <td><a href="https://space.bilibili.com/20829945/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>前进四科技实验室</td>
-                        <td><a href="https://space.bilibili.com/1391512166/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>Redknot-乔红</td>
-                        <td><a href="https://space.bilibili.com/38154792/upload/video" target="_blank">链接</a></td>
-                        <td>科技</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>自远造价</td>
-                        <td><a href="https://space.bilibili.com/1235619704/upload/video" target="_blank">链接</a></td>
-                        <td>土木产品开发</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>任赜宇</td>
-                        <td><a href="https://www.zhihu.com/people/ren-ze-yu-45" target="_blank">链接</a></td>
-                        <td>珞石，具身，机械硬件研究方向，机械手</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>明仔</td>
-                        <td><a href="https://www.zhihu.com/people/matrix200" target="_blank">链接</a></td>
-                        <td>sim2real</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>陈天健</td>
-                        <td><a href="https://www.zhihu.com/people/chen-tian-jian-7" target="_blank">链接</a></td>
-                        <td>机械科班，华科，机器人</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>高阳</td>
-                        <td><a href="https://people.iiis.tsinghua.edu.cn/~gaoyang/yang-gao.weebly.com/index.html" target="_blank">链接</a></td>
-                        <td>千寻智能，视觉强化</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>张雨浓</td>
-                        <td><a href="https://ise.sysu.edu.cn/teacher/ZhangYunong" target="_blank">链接</a></td>
-                        <td>控制理论、算法与工程，神经动力学/神经网络/人工智能，机器人/机械臂，数值计算方法与优化</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>上帝视角</td>
-                        <td><a href="https://www.zhihu.com/people/shang-di-shi-jiao-64" target="_blank">链接</a></td>
-                        <td>工业设计转机械，机器人工程师</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>李泽湘</td>
-                        <td><a href="#" target="_blank">链接</a></td>
-                        <td>大疆飞控教父，控制理论</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>why not TV</td>
-                        <td><a href="https://b23.tv/qFcb6ac" target="_blank">链接</a></td>
-                        <td>neal，CMU，机器人</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>桂凯</td>
-                        <td><a href="https://www.zhihu.com/people/exos_skeleton" target="_blank">链接</a></td>
-                        <td>上海交通大学，生机电一体化，机器人</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>V777</td>
-                        <td><a href="https://www.zhihu.com/people/weiqi-50-78" target="_blank">链接</a></td>
-                        <td>控制理论</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>玻璃伞</td>
-                        <td><a href="https://www.zhihu.com/people/liu-li-san-" target="_blank">链接</a></td>
-                        <td>控制理论</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>河和荷</td>
-                        <td><a href="https://www.zhihu.com/people/ZhuYucai1" target="_blank">链接</a></td>
-                        <td>控制理论</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>YY硕</td>
-                        <td><a href="https://www.zhihu.com/people/yyss2037" target="_blank">链接</a></td>
-                        <td>李硕</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>小方同学</td>
-                        <td><a href="https://www.zhihu.com/people/fcx-10" target="_blank">链接</a></td>
-                        <td>经纬恒润自动驾驶Leader 清华大学博士</td>
-                    </tr>
-                    <tr data-type="工学">
-                        <td>工学</td>
-                        <td>DR_CAN</td>
-                        <td><a href="https://space.bilibili.com/230105574?spm_id_from=333.788.upinfo.detail.click" target="_blank">链接</a></td>
-                        <td>控制老师</td>
-                    </tr>
+                    <div class="mindmap-item engineering" id="blogger-1">
+                        <h3>千秋我不见</h3>
+                        <a href="https://space.bilibili.com/3546648267458570/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-2">
+                        <h3>fire1tech</h3>
+                        <a href="https://space.bilibili.com/506494865/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-3">
+                        <h3>工科男孙老师</h3>
+                        <a href="https://space.bilibili.com/43584648/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-4">
+                        <h3>中飞动力</h3>
+                        <a href="https://space.bilibili.com/44662140/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-5">
+                        <h3>小 Dou 有两块钢铁</h3>
+                        <a href="https://space.bilibili.com/507470725/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-6">
+                        <h3>维修佬戴师傅</h3>
+                        <a href="https://space.bilibili.com/1733266646/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-7">
+                        <h3>VeriMake</h3>
+                        <a href="https://space.bilibili.com/356383684/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-8">
+                        <h3>马工流浪德国</h3>
+                        <a href="https://space.bilibili.com/2506840/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-9">
+                        <h3>Oskar</h3>
+                        <a href="https://space.bilibili.com/375400171/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-10">
+                        <h3>工厂极客</h3>
+                        <a href="https://space.bilibili.com/481034497/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-11">
+                        <h3>一切的流程</h3>
+                        <a href="https://space.bilibili.com/3493082129500984/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-12">
+                        <h3>自动化高级工程师</h3>
+                        <a href="https://space.bilibili.com/32877387/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-13">
+                        <h3>MiracleProcess</h3>
+                        <a href="https://space.bilibili.com/369308230/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-14">
+                        <h3>可心造物</h3>
+                        <a href="https://space.bilibili.com/476961512/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-15">
+                        <h3>巴师傅实用机电</h3>
+                        <a href="https://space.bilibili.com/3493271942728403/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-16">
+                        <h3>深圳刘工</h3>
+                        <a href="https://space.bilibili.com/3493088209144609/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-17">
+                        <h3>硬核拆解</h3>
+                        <a href="https://space.bilibili.com/427494870/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-18">
+                        <h3>叮咣拆机</h3>
+                        <a href="https://space.bilibili.com/1029896185/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-19">
+                        <h3>方猫 boom</h3>
+                        <a href="https://space.bilibili.com/138624168/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-20">
+                        <h3>手工耿</h3>
+                        <a href="https://space.bilibili.com/280793434/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-21">
+                        <h3>喵星考拉（知乎）</h3>
+                        <a href="https://www.zhihu.com/people/miao-xing-kao-la" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-22">
+                        <h3>喵星考拉（B站）</h3>
+                        <a href="https://space.bilibili.com/431953269/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-23">
+                        <h3>大佬吴_Jennifer</h3>
+                        <a href="https://space.bilibili.com/221670316/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-24">
+                        <h3>瘦子阿汪</h3>
+                        <a href="https://space.bilibili.com/10605391/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-25">
+                        <h3>404小设</h3>
+                        <a href="https://space.bilibili.com/285706426/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-26">
+                        <h3>邯工制图</h3>
+                        <a href="https://space.bilibili.com/479966540/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-27">
+                        <h3>蒋小坏</h3>
+                        <a href="https://www.zhihu.com/people/jiang-gui-ping-98/answers" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-28">
+                        <h3>幽州大肚肚</h3>
+                        <a href="https://www.zhihu.com/people/ting-zhong-wei-mian-ke" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-29">
+                        <h3>追光者</h3>
+                        <a href="https://www.zhihu.com/people/sun-xiao-12-42" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-30">
+                        <h3>孙覾时</h3>
+                        <a href="https://www.zhihu.com/people/sin-zone" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-31">
+                        <h3>稚晖君</h3>
+                        <a href="https://space.bilibili.com/20259914/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-32">
+                        <h3>硬件茶谈</h3>
+                        <a href="https://space.bilibili.com/14871346/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-33">
+                        <h3>星球研究所</h3>
+                        <a href="https://space.bilibili.com/326427334/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-34">
+                        <h3>做视频的洛唐</h3>
+                        <a href="https://space.bilibili.com/20829945/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-35">
+                        <h3>前进四科技实验室</h3>
+                        <a href="https://space.bilibili.com/1391512166/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-36">
+                        <h3>Redknot-乔红</h3>
+                        <a href="https://space.bilibili.com/38154792/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-37">
+                        <h3>自远造价</h3>
+                        <a href="https://space.bilibili.com/1235619704/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-38">
+                        <h3>任赜宇</h3>
+                        <a href="https://www.zhihu.com/people/ren-ze-yu-45" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-39">
+                        <h3>明仔</h3>
+                        <a href="https://www.zhihu.com/people/matrix200" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-40">
+                        <h3>陈天健</h3>
+                        <a href="https://www.zhihu.com/people/chen-tian-jian-7" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-41">
+                        <h3>高阳</h3>
+                        <a href="https://people.iiis.tsinghua.edu.cn/~gaoyang/yang-gao.weebly.com/index.html" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-42">
+                        <h3>张雨浓</h3>
+                        <a href="https://ise.sysu.edu.cn/teacher/ZhangYunong" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-43">
+                        <h3>上帝视角</h3>
+                        <a href="https://www.zhihu.com/people/shang-di-shi-jiao-64" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-44">
+                        <h3>李泽湘</h3>
+                        <a href="#" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-45">
+                        <h3>why not TV</h3>
+                        <a href="https://b23.tv/qFcb6ac" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-46">
+                        <h3>桂凯</h3>
+                        <a href="https://www.zhihu.com/people/exos_skeleton" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-47">
+                        <h3>V777</h3>
+                        <a href="https://www.zhihu.com/people/weiqi-50-78" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-48">
+                        <h3>玻璃伞</h3>
+                        <a href="https://www.zhihu.com/people/liu-li-san-" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-49">
+                        <h3>河和荷</h3>
+                        <a href="https://www.zhihu.com/people/ZhuYucai1" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-50">
+                        <h3>YY硕</h3>
+                        <a href="https://www.zhihu.com/people/yyss2037" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-51">
+                        <h3>小方同学</h3>
+                        <a href="https://www.zhihu.com/people/fcx-10" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item engineering" id="blogger-52">
+                        <h3>DR_CAN</h3>
+                        <a href="https://space.bilibili.com/230105574?spm_id_from=333.788.upinfo.detail.click" class="mindmap-link" target="_blank">Link</a>
+                    </div>
                     
                     <!-- 理学博主 -->
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>漫士沉思录</td>
-                        <td><a href="https://space.bilibili.com/266765166/upload/video" target="_blank">链接</a></td>
-                        <td>理学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>轩兔</td>
-                        <td><a href="https://space.bilibili.com/20883932/upload/video" target="_blank">链接</a></td>
-                        <td>理学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>史话数学</td>
-                        <td><a href="https://space.bilibili.com/543979752/upload/video" target="_blank">链接</a></td>
-                        <td>理学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>3Blue1Brown</td>
-                        <td><a href="https://space.bilibili.com/88461692/upload/video" target="_blank">链接</a></td>
-                        <td>理学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>李永乐</td>
-                        <td><a href="https://space.bilibili.com/9458053/upload/video" target="_blank">链接</a></td>
-                        <td>/</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>数小理</td>
-                        <td><a href="https://space.bilibili.com/1213282495/upload/video" target="_blank">链接</a></td>
-                        <td>数理可视化</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>云忘风</td>
-                        <td><a href="https://www.zhihu.com/people/ansatz" target="_blank">链接</a></td>
-                        <td>数学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>柳前</td>
-                        <td><a href="https://www.zhihu.com/people/liu-qi-han-98" target="_blank">链接</a></td>
-                        <td>音乐、物理</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>子羽</td>
-                        <td><a href="https://www.zhihu.com/people/zi-yu-82-46" target="_blank">链接</a></td>
-                        <td>量子博士，华工本硕博</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>李德甲</td>
-                        <td><a href="https://www.zhihu.com/people/lidejia1984" target="_blank">链接</a></td>
-                        <td>数学系，物理，程序员</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>流形</td>
-                        <td><a href="https://www.zhihu.com/people/dualer-world" target="_blank">链接</a></td>
-                        <td>物理</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>洗芝溪</td>
-                        <td><a href="https://www.zhihu.com/people/yao326yao" target="_blank">链接</a></td>
-                        <td>量子物理，凝聚态</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>Monsoon</td>
-                        <td><a href="https://www.zhihu.com/people/Monsoon_N" target="_blank">链接</a></td>
-                        <td>物理</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>王清扬</td>
-                        <td><a href="https://www.zhihu.com/people/wang-qing-yang-68-26" target="_blank">链接</a></td>
-                        <td>物理</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>深竹</td>
-                        <td><a href="https://www.zhihu.com/people/shen_zhu" target="_blank">链接</a></td>
-                        <td>数学</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>rq cen</td>
-                        <td><a href="https://www.zhihu.com/people/rq-cen" target="_blank">链接</a></td>
-                        <td>清华基科</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>刘易安</td>
-                        <td><a href="https://www.zhihu.com/people/pi-la-fu-12" target="_blank">链接</a></td>
-                        <td>北京师范大学 理论物理博士</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>triborg</td>
-                        <td><a href="https://www.zhihu.com/people/yongle-li-86" target="_blank">链接</a></td>
-                        <td>上海大学教授，量子科技</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>拉格朗日的忧郁</td>
-                        <td><a href="https://www.zhihu.com/people/li-hui-53-72" target="_blank">链接</a></td>
-                        <td>凝聚态场论方向，post-doc</td>
-                    </tr>
-                    <tr data-type="理学">
-                        <td>理学</td>
-                        <td>Yuhang Liu</td>
-                        <td><a href="https://www.zhihu.com/people/yuhang-liu-34" target="_blank">链接</a></td>
-                        <td>/</td>
-                    </tr>
+                    <div class="mindmap-item science" id="blogger-53">
+                        <h3>漫士沉思录</h3>
+                        <a href="https://space.bilibili.com/266765166/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-54">
+                        <h3>轩兔</h3>
+                        <a href="https://space.bilibili.com/20883932/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-55">
+                        <h3>史话数学</h3>
+                        <a href="https://space.bilibili.com/543979752/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-56">
+                        <h3>3Blue1Brown</h3>
+                        <a href="https://space.bilibili.com/88461692/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-57">
+                        <h3>李永乐</h3>
+                        <a href="https://space.bilibili.com/9458053/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-58">
+                        <h3>数小理</h3>
+                        <a href="https://space.bilibili.com/1213282495/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-59">
+                        <h3>云忘风</h3>
+                        <a href="https://www.zhihu.com/people/ansatz" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-60">
+                        <h3>柳前</h3>
+                        <a href="https://www.zhihu.com/people/liu-qi-han-98" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-61">
+                        <h3>子羽</h3>
+                        <a href="https://www.zhihu.com/people/zi-yu-82-46" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-62">
+                        <h3>李德甲</h3>
+                        <a href="https://www.zhihu.com/people/lidejia1984" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-63">
+                        <h3>流形</h3>
+                        <a href="https://www.zhihu.com/people/dualer-world" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-64">
+                        <h3>洗芝溪</h3>
+                        <a href="https://www.zhihu.com/people/yao326yao" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-65">
+                        <h3>Monsoon</h3>
+                        <a href="https://www.zhihu.com/people/Monsoon_N" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-66">
+                        <h3>王清扬</h3>
+                        <a href="https://www.zhihu.com/people/wang-qing-yang-68-26" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-67">
+                        <h3>深竹</h3>
+                        <a href="https://www.zhihu.com/people/shen_zhu" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-68">
+                        <h3>rq cen</h3>
+                        <a href="https://www.zhihu.com/people/rq-cen" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-69">
+                        <h3>刘易安</h3>
+                        <a href="https://www.zhihu.com/people/pi-la-fu-12" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-70">
+                        <h3>triborg</h3>
+                        <a href="https://www.zhihu.com/people/yongle-li-86" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-71">
+                        <h3>拉格朗日的忧郁</h3>
+                        <a href="https://www.zhihu.com/people/li-hui-53-72" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item science" id="blogger-72">
+                        <h3>Yuhang Liu</h3>
+                        <a href="https://www.zhihu.com/people/yuhang-liu-34" class="mindmap-link" target="_blank">Link</a>
+                    </div>
                     
                     <!-- 生活旅游博主 -->
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>奎奎奎奎奎尼</td>
-                        <td><a href="https://space.bilibili.com/13100572/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>阿卡乔的自然笔记</td>
-                        <td><a href="https://space.bilibili.com/1348450879/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>FZheng_</td>
-                        <td><a href="https://space.bilibili.com/336206738/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>小南希希希Nancy</td>
-                        <td><a href="https://space.bilibili.com/259759787/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>Kakactzen</td>
-                        <td><a href="https://space.bilibili.com/399348524/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>flowingnight</td>
-                        <td><a href="https://space.bilibili.com/433345248/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>links</td>
-                        <td><a href="https://space.bilibili.com/3816626/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>HannahTraveling</td>
-                        <td><a href="https://space.bilibili.com/3537121329547492/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>是当归哦</td>
-                        <td><a href="https://space.bilibili.com/351477766/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-type="生活旅游">
-                        <td>生活旅游</td>
-                        <td>好朋友南犬</td>
-                        <td><a href="https://space.bilibili.com/932983/upload/video" target="_blank">链接</a></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-        
-        <script>
-            // 筛选功能实现
-            document.addEventListener('DOMContentLoaded', function() {
-                const typeFilter = document.getElementById('type-filter');
-                const keywordFilter = document.getElementById('keyword-filter');
-                const tableRows = document.querySelectorAll('.bloggers-table tbody tr');
-                
-                // 筛选函数
-                function filterTable() {
-                    const selectedType = typeFilter.value;
-                    const keyword = keywordFilter.value.toLowerCase();
-                    
-                    tableRows.forEach(row => {
-                        const rowType = row.getAttribute('data-type');
-                        const rowTitle = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
-                        const rowNote = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
-                        
-                        // 类型筛选
-                        const typeMatch = selectedType === 'all' || rowType === selectedType;
-                        // 关键词筛选
-                        const keywordMatch = keyword === '' || rowTitle.includes(keyword) || rowNote.includes(keyword);
-                        
-                        // 显示或隐藏行
-                        if (typeMatch && keywordMatch) {
-                            row.style.display = '';
-                        } else {
-                            row.style.display = 'none';
-                        }
-                    });
-                }
-                
-                // 监听筛选条件变化
-                typeFilter.addEventListener('change', filterTable);
-                keywordFilter.addEventListener('input', filterTable);
-            });
-        </script>
+                    <div class="mindmap-item travel" id="blogger-73">
+                        <h3>奎奎奎奎奎尼</h3>
+                        <a href="https://space.bilibili.com/13100572/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-74">
+                        <h3>阿卡乔的自然笔记</h3>
+                        <a href="https://space.bilibili.com/1348450879/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-75">
+                        <h3>FZheng_</h3>
+                        <a href="https://space.bilibili.com/336206738/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-76">
+                        <h3>小南希希希Nancy</h3>
+                        <a href="https://space.bilibili.com/259759787/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-77">
+                        <h3>Kakactzen</h3>
+                        <a href="https://space.bilibili.com/399348524/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-78">
+                        <h3>flowingnight</h3>
+                        <a href="https://space.bilibili.com/433345248/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-79">
+                        <h3>links</h3>
+                        <a href="https://space.bilibili.com/3816626/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-80">
+                        <h3>HannahTraveling</h3>
+                        <a href="https://space.bilibili.com/3537121329547492/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-81">
+                        <h3>是当归哦</h3>
+                        <a href="https://space.bilibili.com/351477766/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                    <div class="mindmap-item travel" id="blogger-82">
+                        <h3>好朋友南犬</h3>
+                        <a href="https://space.bilibili.com/932983/upload/video" class="mindmap-link" target="_blank">Link</a>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
