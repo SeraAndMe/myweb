@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书籍评分 - Lina's Archive</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Lina's Archive</a></h1>
+            <h2>书籍评分</h2>
+            <div class="language-switch">
+                <a href="books.html">中文</a> | <a href="../books.html">English</a>
+            </div>
+        </header>
+        <main>
+            <div class="filter-section">
+                <label for="rating-filter">按评分筛选：</label>
+                <select id="rating-filter" onchange="filterBooks()">
+                    <option value="all">全部</option>
+                    <option value="5">5</option>
+                    <option value="4.5">4.5</option>
+                    <option value="4">4</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3">3</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            
+            <!-- 科技 -->
+            <section class="book-category">
+                <h3>科技</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《上帝掷骰子吗》</span> <span class="book-rating">3</span> <span class="book-note">(在读)</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《工程师之魂》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《星际穿越》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《冲向火星》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《人工智能全传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《汽车为什么会跑》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《古今数学思想（第一册）》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《神奇的数字零》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《费马大定理》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《数》</span> <span class="book-rating">3</span></li>
+                </ul>
+            </section>
+            
+            <!-- 心理学 -->
+            <section class="book-category">
+                <h3>心理学</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《臣服实验》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="2.5"><span class="book-title">《心流》</span> <span class="book-rating">2.5</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《认知天性》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《自控力》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《大脑整理术》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《大脑使用指南》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《如何高效记忆》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《也许你该找个人聊聊》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《卡片笔记写作法》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《如何阅读一本书》</span> <span class="book-rating">2</span></li>
+                </ul>
+            </section>
+            
+            <!-- 社科 -->
+            <section class="book-category">
+                <h3>社科</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《置身事内》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《小岛经济学》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《富爸爸穷爸爸》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《全球通史第一册》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《用地图看懂世界格局》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《大国的崩溃》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《中东纪事》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《抗日战争》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《文明的冲突与世界秩序的重建》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《联合政府与一党训政》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《枪炮病菌与钢铁》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《论中国》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="2.5"><span class="book-title">《菊与刀》</span> <span class="book-rating">2.5</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《西行漫记》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《人类简史》</span> <span class="book-rating">3.5</span></li>
+                </ul>
+            </section>
+            
+            <!-- 小说 -->
+            <section class="book-category">
+                <h3>小说</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《人类群星闪耀时》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《降临》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《月亮与六便士》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《荒原狼》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《不能承受的生命之轻》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《献给阿尔吉侬的花束》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《悉达多》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《局外人》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《傲慢与偏见》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《牛虻》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《克莱因壶》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《素食者》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《动物农场》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《仿生人会梦见电子羊吗》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《牧羊少年奇幻之旅》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《火星救援》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《追风筝的人》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《人间失格》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《围城》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《嫌疑人的献身》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《平凡的世界》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《三国演义（全二册）》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《杀死一只知更鸟》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《1984》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《美丽新世界》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《三体》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《哈利波特全系列》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《莫泊桑短篇小说集》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《羊脂球》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《毛姆读书随想录》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《我与地坛》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《瓦尔登湖》</span> <span class="book-rating">4</span></li>
+                </ul>
+            </section>
+            
+            <!-- 传记类 -->
+            <section class="book-category">
+                <h3>传记类</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《周恩来最后600天》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《我看见的世界（李飞飞自传）》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《罗素自传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《沃兹尼亚克自传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《朱江洪自传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《特斯拉自传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《特斯拉传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《达芬奇传》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="5"><span class="book-title">《爱因斯坦传》</span> <span class="book-rating">5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《最后的炼金术士牛顿传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《埃隆·马斯克传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《乔布斯传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《列宁传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《叶卡捷琳娜传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《奥本海默传》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《邓小平时代》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《毛泽东传》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="1"><span class="book-title">《希特勒》</span> <span class="book-rating">1</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《别闹了费曼先生》</span> <span class="book-rating">3.5</span></li>
+                </ul>
+            </section>
+            
+            <!-- 其它 -->
+            <section class="book-category">
+                <h3>其它</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="4"><span class="book-title">《病人家属请来一下》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《失落的卫星》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《当呼吸化为空气》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《隐谷路》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《观念的水位》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《荒野生存》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《二手时间》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《送你一颗子弹》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《被讨厌的勇气》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《果壳帮你选专业（2022版）》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《亲密关系》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《365日》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《感受普林斯顿》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《最好的告别》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《肠子的小心思》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《娱乐至死》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《我是个妈妈我需要铂金包》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《三国志男》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《乌合之众》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《你当像鸟》</span> <span class="book-rating">3</span></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

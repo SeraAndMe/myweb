@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ratings - Lina's Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Lina's Archive</a></h1>
+            <h2>Book Ratings</h2>
+            <div class="language-switch">
+                <a href="zh/books.html">中文</a> | <a href="books.html">English</a>
+            </div>
+        </header>
+        <main>
+            <div class="filter-section">
+                <label for="rating-filter">Filter by rating:</label>
+                <select id="rating-filter" onchange="filterBooks()">
+                    <option value="all">All</option>
+                    <option value="5">5</option>
+                    <option value="4.5">4.5</option>
+                    <option value="4">4</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3">3</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            
+            <!-- Technology -->
+            <section class="book-category">
+                <h3>Technology</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《Is God a Mathematician?》</span> <span class="book-rating">3</span> <span class="book-note">(Reading)</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Soul of an Engineer》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Interstellar》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Racing to Mars》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Complete History of Artificial Intelligence》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Why Do Cars Run?》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Mathematical Thought from Ancient to Modern Times (Volume 1)》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Mystery of the Number Zero》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Fermat's Last Theorem》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Number》</span> <span class="book-rating">3</span></li>
+                </ul>
+            </section>
+            
+            <!-- Psychology -->
+            <section class="book-category">
+                <h3>Psychology</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《The Surrender Experiment》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="2.5"><span class="book-title">《Flow》</span> <span class="book-rating">2.5</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Make It Stick》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Willpower》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Brain Organization》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Brain User's Guide》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《How to Memorize Effectively》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Maybe You Should Talk to Someone》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《How to Take Smart Notes》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《How to Read a Book》</span> <span class="book-rating">2</span></li>
+                </ul>
+            </section>
+            
+            <!-- Social Sciences -->
+            <section class="book-category">
+                <h3>Social Sciences</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《Inside the System》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Economic Naturalist》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Rich Dad Poor Dad》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《A Global History (Volume 1)》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Understanding World Patterns Through Maps》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《The Collapse of Great Powers》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Middle East Chronicles》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《The War of Resistance Against Japan》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《The Clash of Civilizations and the Remaking of World Order》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Coalition Government and One-Party Dictatorship》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Guns, Germs, and Steel》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《On China》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="2.5"><span class="book-title">《The Chrysanthemum and the Sword》</span> <span class="book-rating">2.5</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Red Star Over China》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Sapiens: A Brief History of Humankind》</span> <span class="book-rating">3.5</span></li>
+                </ul>
+            </section>
+            
+            <!-- Fiction -->
+            <section class="book-category">
+                <h3>Fiction</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《Human Stars Shine》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Arrival》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《The Moon and Sixpence》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《Steppenwolf》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《The Unbearable Lightness of Being》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Flowers for Algernon》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Siddhartha》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Stranger》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Pride and Prejudice》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《The Gadfly》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Klein Bottle》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《The Vegetarian》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《Animal Farm》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Do Androids Dream of Electric Sheep?》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Alchemist》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Martian》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《The Kite Runner》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《No Longer Human》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Fortress Besieged》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Devotion of Suspect X》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Ordinary World》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Romance of the Three Kingdoms (2 volumes)》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《To Kill a Mockingbird》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《1984》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Brave New World》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《The Three-Body Problem》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Harry Potter Series》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Maupassant's Short Stories》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Boule de Suif》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Maugham's Reading Reflections》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《I and地坛》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《Walden》</span> <span class="book-rating">4</span></li>
+                </ul>
+            </section>
+            
+            <!-- Biographies -->
+            <section class="book-category">
+                <h3>Biographies</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="3"><span class="book-title">《Zhou Enlai's Last 600 Days》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《The World I See (Fei-Fei Li Autobiography)》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Autobiography of Bertrand Russell》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Wozniak's Autobiography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Zhu Jianghong's Autobiography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Tesla's Autobiography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Tesla: Man Out of Time》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Leonardo da Vinci》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="5"><span class="book-title">《Einstein: His Life and Universe》</span> <span class="book-rating">5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Last Alchemist: Newton's Biography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Steve Jobs》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Lenin: A Biography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Catherine the Great: Portrait of a Woman》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Deng Xiaoping and the Transformation of China》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Mao:

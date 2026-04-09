@@ -98,3 +98,17 @@ document.addEventListener('DOMContentLoaded', function() {
         engineeringTitle.click();
     }
 });
+
+// 书籍评分筛选功能
+function filterBooks() {
+    const selectedRating = document.getElementById('rating-filter').value;
+    const bookItems = document.querySelectorAll('.book-item');
+    
+    bookItems.forEach(item => {
+        if (selectedRating === 'all' || item.getAttribute('data-rating') === selectedRating) {
+            item.style.display = 'list-item';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
