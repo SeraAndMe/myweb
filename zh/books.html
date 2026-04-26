@@ -15,7 +15,31 @@
                 <a href="books.html">中文</a> | <a href="../books.html">English</a>
             </div>
         </header>
-        <main>
+        <div class="content-wrapper">
+            <nav class="side-nav">
+                <h3>书籍分类</h3>
+                <ul class="nav-list">
+                    <li class="main-category">
+                        <a href="#technology" class="category-title">科技</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#psychology" class="category-title">心理学</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#social-sciences" class="category-title">社科</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#fiction" class="category-title">小说</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#biographies" class="category-title">传记类</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#other" class="category-title">其它</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main-content">
             <div class="filter-section">
                 <label for="rating-filter">按评分筛选：</label>
                 <select id="rating-filter" onchange="filterBooks()">
@@ -32,10 +56,11 @@
             </div>
             
             <!-- 科技 -->
-            <section class="book-category">
+            <section class="book-category" id="technology">
                 <h3>科技</h3>
                 <ul class="book-list">
-                    <li class="book-item" data-rating="3"><span class="book-title">《上帝掷骰子吗》</span> <span class="book-rating">3</span> <span class="book-note">(在读)</span></li>
+
+                    <li class="book-item" data-rating="3"><span class="book-title">《上帝掷骰子吗》</span> <span class="book-rating">3</span> </li>
                     <li class="book-item" data-rating="3"><span class="book-title">《工程师之魂》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《星际穿越》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《冲向火星》</span> <span class="book-rating">3</span></li>
@@ -49,7 +74,7 @@
             </section>
             
             <!-- 心理学 -->
-            <section class="book-category">
+            <section class="book-category" id="psychology">
                 <h3>心理学</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3.5"><span class="book-title">《臣服实验》</span> <span class="book-rating">3.5</span></li>
@@ -66,7 +91,7 @@
             </section>
             
             <!-- 社科 -->
-            <section class="book-category">
+            <section class="book-category" id="social-sciences">
                 <h3>社科</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《置身事内》</span> <span class="book-rating">3</span></li>
@@ -88,7 +113,7 @@
             </section>
             
             <!-- 小说 -->
-            <section class="book-category">
+            <section class="book-category" id="fiction">
                 <h3>小说</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《人类群星闪耀时》</span> <span class="book-rating">3</span></li>
@@ -123,11 +148,12 @@
                     <li class="book-item" data-rating="3"><span class="book-title">《毛姆读书随想录》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3.5"><span class="book-title">《我与地坛》</span> <span class="book-rating">3.5</span></li>
                     <li class="book-item" data-rating="4"><span class="book-title">《瓦尔登湖》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《你当像鸟飞往你的山》</span> <span class="book-rating">3</span></li>
                 </ul>
             </section>
             
             <!-- 传记类 -->
-            <section class="book-category">
+            <section class="book-category" id="biographies">
                 <h3>传记类</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《周恩来最后600天》</span> <span class="book-rating">3</span></li>
@@ -153,7 +179,7 @@
             </section>
             
             <!-- 其它 -->
-            <section class="book-category">
+            <section class="book-category" id="other">
                 <h3>其它</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="4"><span class="book-title">《病人家属请来一下》</span> <span class="book-rating">4</span></li>
@@ -175,10 +201,10 @@
                     <li class="book-item" data-rating="3"><span class="book-title">《我是个妈妈我需要铂金包》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《三国志男》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="2"><span class="book-title">《乌合之众》</span> <span class="book-rating">2</span></li>
-                    <li class="book-item" data-rating="3"><span class="book-title">《你当像鸟》</span> <span class="book-rating">3</span></li>
                 </ul>
             </section>
-        </main>
+            </main>
+        </div>
     </div>
     <script src="../script.js"></script>
 </body>

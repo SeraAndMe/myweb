@@ -16,7 +16,31 @@
                 <a href="zh/books.html">中文</a> | <a href="books.html">English</a>
             </div>
         </header>
-        <main>
+        <div class="content-wrapper">
+            <nav class="side-nav">
+                <h3>Book Categories</h3>
+                <ul class="nav-list">
+                    <li class="main-category">
+                        <a href="#technology" class="category-title">Technology</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#psychology" class="category-title">Psychology</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#social-sciences" class="category-title">Social Sciences</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#fiction" class="category-title">Fiction</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#biographies" class="category-title">Biographies</a>
+                    </li>
+                    <li class="main-category">
+                        <a href="#other" class="category-title">Other</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main-content">
             <div class="filter-section">
                 <label for="rating-filter">Filter by rating:</label>
                 <select id="rating-filter" onchange="filterBooks()">
@@ -33,10 +57,11 @@
             </div>
             
             <!-- Technology -->
-            <section class="book-category">
+            <section class="book-category" id="technology">
                 <h3>Technology</h3>
                 <ul class="book-list">
-                    <li class="book-item" data-rating="3"><span class="book-title">《Is God a Mathematician?》</span> <span class="book-rating">3</span> <span class="book-note">(Reading)</span></li>
+
+                    <li class="book-item" data-rating="3"><span class="book-title">《Does God Play Dice?》</span> <span class="book-rating">3</span> </li>
                     <li class="book-item" data-rating="3"><span class="book-title">《The Soul of an Engineer》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《Interstellar》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《Racing to Mars》</span> <span class="book-rating">3</span></li>
@@ -50,7 +75,7 @@
             </section>
             
             <!-- Psychology -->
-            <section class="book-category">
+            <section class="book-category" id="psychology">
                 <h3>Psychology</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3.5"><span class="book-title">《The Surrender Experiment》</span> <span class="book-rating">3.5</span></li>
@@ -67,7 +92,7 @@
             </section>
             
             <!-- Social Sciences -->
-            <section class="book-category">
+            <section class="book-category" id="social-sciences">
                 <h3>Social Sciences</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《Inside the System》</span> <span class="book-rating">3</span></li>
@@ -89,7 +114,7 @@
             </section>
             
             <!-- Fiction -->
-            <section class="book-category">
+            <section class="book-category" id="fiction">
                 <h3>Fiction</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《Human Stars Shine》</span> <span class="book-rating">3</span></li>
@@ -122,13 +147,14 @@
                     <li class="book-item" data-rating="3"><span class="book-title">《Maupassant's Short Stories》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《Boule de Suif》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="3"><span class="book-title">《Maugham's Reading Reflections》</span> <span class="book-rating">3</span></li>
-                    <li class="book-item" data-rating="3.5"><span class="book-title">《I and地坛》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Me and Ditan Park》</span> <span class="book-rating">3.5</span></li>
                     <li class="book-item" data-rating="4"><span class="book-title">《Walden》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《Educated: a memoir》</span> <span class="book-rating">3</span></li>
                 </ul>
             </section>
             
             <!-- Biographies -->
-            <section class="book-category">
+            <section class="book-category" id="biographies">
                 <h3>Biographies</h3>
                 <ul class="book-list">
                     <li class="book-item" data-rating="3"><span class="book-title">《Zhou Enlai's Last 600 Days》</span> <span class="book-rating">3</span></li>
@@ -147,4 +173,39 @@
                     <li class="book-item" data-rating="3"><span class="book-title">《Catherine the Great: Portrait of a Woman》</span> <span class="book-rating">3</span></li>
                     <li class="book-item" data-rating="4"><span class="book-title">《American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer》</span> <span class="book-rating">4</span></li>
                     <li class="book-item" data-rating="4.5"><span class="book-title">《Deng Xiaoping and the Transformation of China》</span> <span class="book-rating">4.5</span></li>
-                    <li class="book-item" data-rating="3"><span class="book-title">《Mao:
+                    <li class="book-item" data-rating="3"><span class="book-title">《Mao: A Biography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Hitler: A Biography》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Surely You're Joking, Mr. Feynman!》</span> <span class="book-rating">3</span></li>
+                </ul>
+            </section>
+            
+            <!-- Other -->
+            <section class="book-category" id="other">
+                <h3>Other</h3>
+                <ul class="book-list">
+                    <li class="book-item" data-rating="4"><span class="book-title">《Please Come Here, Patient's Family》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《Lost Satellites》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="4.5"><span class="book-title">《When Breath Becomes Air》</span> <span class="book-rating">4.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Hidden Valley Road》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="4"><span class="book-title">《The Water Level of Ideas》</span> <span class="book-rating">4</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Into the Wild》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Secondhand Time》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3.5"><span class="book-title">《Send You a Bullet》</span> <span class="book-rating">3.5</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《The Courage to Be Disliked》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Guokr Helps You Choose a Major (2022 Edition)》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Intimate Relationships》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《365 Days》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Experiencing Princeton》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Being Mortal》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Gut: The Inside Story》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《Amusing Ourselves to Death》</span> <span class="book-rating">2</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《I'm a Mom, I Need a Platinum Bag》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="3"><span class="book-title">《Three Kingdoms Man》</span> <span class="book-rating">3</span></li>
+                    <li class="book-item" data-rating="2"><span class="book-title">《The Crowd: A Study of the Popular Mind》</span> <span class="book-rating">2</span></li>
+                </ul>
+            </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

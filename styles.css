@@ -461,6 +461,7 @@ main {
     border-bottom: 1px solid #e9ecef;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 .category-title:hover {
@@ -643,7 +644,7 @@ main {
     background-color: #fff;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     transition: background-color 0.2s;
 }
